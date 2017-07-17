@@ -26,3 +26,15 @@ Method
 
 ---
 
+The following steps repeats for every pixel of the image.
+
+(1) Transform 「Nonlinear RGB」 to 「Linear RGB」 ( Gamma effect )
+
+(2) Transform 「Linear RGB」 to 「HSV color space」 ( RGB to HSV )
+
+(3) According to the criterion or purpose, process the value of the pixel in HSV color space. ( Color transformation )
+
+(4) Transform 「HSV color space」 back to 「Linear RGB」 ( HSV to RGB )
+
+(5) Transform 「Linear RGB」 back to 「Nonlinear RGB」 ( Gamma effect )
+

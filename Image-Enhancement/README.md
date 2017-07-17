@@ -51,8 +51,23 @@ Output image 04
 
 ![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Image-Enhancement/images/output4_histogram.bmp)
 
+「 Homomorphic filter + Alpha trimmed filter 」
 
+Ouput image 01
 
+![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Image-nhancement/images/output1_homomorphic.bmp)
+
+Ouput image 02
+
+![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Image-nhancement/images/output2_homomorphic.bmp)
+
+Ouput image 03
+
+![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Image-nhancement/images/output3_homomorphic.bmp)
+
+Ouput image 04
+
+![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Image-nhancement/images/output4_homomorphic.bmp)
 
 ---
 

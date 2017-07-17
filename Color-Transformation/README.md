@@ -40,12 +40,24 @@ The following steps repeats for every pixel of the image.
 
 ---
 
-HSV color space and transformation
+HSV color space 
 
 ---
 
 ![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Color-Transformation/images/HSV.PNG)
 
+---
+
+RGB to HSV
+
+---
+
 ![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Color-Transformation/images/RGB-to-HSV.PNG)
+
+---
+
+HSV to RGB
+
+---
 
 ![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Color-Transformation/images/HSV-to-RGB.PNG)

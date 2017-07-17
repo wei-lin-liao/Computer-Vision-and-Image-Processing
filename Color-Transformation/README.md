@@ -14,6 +14,14 @@ Original image
 
 ---
 
+Transformation outcome
+
+---
+
+![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Color-Transformation/images/Tranformation-image.bmp)
+
+---
+
 Method
 
 ---

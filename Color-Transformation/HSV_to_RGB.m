@@ -1,5 +1,5 @@
 function RGB = HSV_to_RGB ( HSV )
-         % ªì©l¤Æ
+         % Initialization
          RGB = zeros(3,1);
          Hi = fix(HSV(1)/60) ;
          F = ( HSV(1)/60 ) - Hi;

@@ -1,10 +1,10 @@
 function HSV = RGB_to_HSV ( RGB  )
-         % 初始化
+         % Initialization
          HSV = zeros(3,1);
          maximum = max(RGB);
          minimum = min(RGB);
          R = RGB(1); G = RGB(2); B = RGB(3);
-         % 計算 Hue
+         % Calculate Hue
             if maximum == minimum
                HSV(1) = 0;
             end
@@ -21,14 +21,14 @@ function HSV = RGB_to_HSV ( RGB  )
                HSV(1) = 60*((R-G)/(maximum-minimum)) + 240;
             end
             
-        % 計算 Saturation
+        % Calculate Saturation
             if maximum == 0
                HSV(2) = 0;
                else
                HSV(2) = 1-(minimum/maximum);
             end
              
-        % 計算 Value
+        % Calculate Value
             HSV(3) = maximum; 
           
 end

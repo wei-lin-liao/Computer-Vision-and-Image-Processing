@@ -33,9 +33,25 @@ Outcome
 
 ---
 
-Output image 01 ( Histogram equalization + Alpha trimmed filter )
+「 Histogram equalization + Alpha trimmed filter 」
+
+Output image 01 
 
 ![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Image-Enhancement/images/output1_histogram.bmp)
+
+Output image 02 
+
+![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Image-Enhancement/images/output2_histogram.bmp)
+
+Output image 03
+
+![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Image-Enhancement/images/output3_histogram.bmp)
+
+Output image 04 
+
+![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Image-Enhancement/images/output4_histogram.bmp)
+
+
 
 
 ---

@@ -1,12 +1,12 @@
-function [en_img] = img_enhance ( img )
+function [en_img] = img_enhance_homomorphic_and_alpha_trimmed ( img )
 
 [H,W,L] = size(img);
 RGB_temp = img_gamma_effect(img);
 
-% RGB 空間域 Alpha trimmed 濾波器
+% RGB space domain Alpha trimmed filter
 discard = 2;
 
-for h = 1:H         % Alpha trimmed
+for h = 1:H         % Alpha trimmed filter
     for w = 1:W
         for l = 1:L 
             if w == 1 && h ==1
@@ -51,7 +51,7 @@ for h = 1:H         % Alpha trimmed
     end   
 end
 
-% 轉換至 HSV 空間
+% Transform to HSV color space
 HSV = RGB_HSV (RGB_temp);
 H_img = HSV(:,:,1);
 S_img = HSV(:,:,2);
@@ -61,7 +61,7 @@ penalty = 0.0001;
 F_V = fft(log(V_img + penalty));     
 F_V = fftshift(F_V); 
 
-% Homomorphic 頻域濾波器
+% Homomorphic frequency domain filter
 filter = zeros(H,W);
 for h = 1:H
     for w =1:W
@@ -72,19 +72,19 @@ for h = 1:H
     end
 end
 
-% 頻域濾波
+% Filtering
 F_V = F_V.*filter;
 
-% 頻域轉回空間域
+% Frequency domain to space domain
 F_V = fftshift(F_V);
 inF_V = ifft(F_V);
 V_img = exp(real(inF_V));
 
-% 轉回 HSV 再轉回 RGB
+% HSV color space to RGB color space
 HSV = cat(3,H_img,S_img,V_img);
 en_img = img_gamma_correct(HSV_RGB(HSV));
 
-for h = 2:H-1          % Laplacian 銳化
+for h = 2:H-1          % Laplacian sharpening
     for w = 2:W-1
         for c = 1:L
             container = RGB_temp(h-1:h+1,w-1:w+1,l);

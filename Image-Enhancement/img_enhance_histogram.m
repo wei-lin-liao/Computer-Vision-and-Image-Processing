@@ -7,7 +7,7 @@ RGB_temp = img_gamma_effect(img);
 RGB_temp = Equal(RGB_temp);
 
 
-% RGB ªÅ¶¡°ì Alpha trimmed Âoªi¾¹
+% RGB ÂªÃ…Â¶Â¡Â°Ã¬ Alpha trimmed Ã‚oÂªiÂ¾Â¹
 discard = 2;
 for h = 1:H          % Alpha trimmed
     for w = 1:W
@@ -68,50 +68,6 @@ for h = 1+size_0:H-size_0          % Alpha trimmed
     end   
 end
 en_img = img_gamma_correct(RGB_temp);
-%{
 
-% Âà´«¦Ü HSV ªÅ¶¡
-HSV = RGB_HSV (RGB_temp);
-H_img = HSV(:,:,1);
-S_img = HSV(:,:,2);
-V_img = HSV(:,:,3);
-
-penalty = 0.0001;
-F_V = fft(log(V_img + penalty));     
-F_V = fftshift(F_V); 
-
-% Homomorphic ÀW°ìÂoªi¾¹
-filter = zeros(H,W);
-for h = 1:H
-    for w =1:W
-        dist = ((h-(H/2))^2 + (w-(W/2))^2)^(0.5);
-        dist = dist/((H/2)^2+(W/2)^2)^(0.5);
-        filter(h,w) = 1/(1 + 2.5*exp(-0.0001*(dist-3)));
-    end
-end
-
-% ÀW°ìÂoªi
-F_V = F_V.*filter;
-
-% ÀW°ìÂà¦^ªÅ¶¡°ì
-F_V = fftshift(F_V);
-inF_V = ifft(F_V);
-V_img = exp(real(inF_V));
-
-% Âà¦^ HSV ¦AÂà¦^ RGB
-HSV = cat(3,H_img,S_img,V_img);
-en_img = img_gamma_correct(HSV_RGB(HSV));
-
-for h = 2:H-1          % Laplacian ¾U¤Æ
-    for w = 2:W-1
-        for c = 1:L
-            container = RGB_temp(h-1:h+1,w-1:w+1,l);
-            filter = [1,1,1;1,-8,1;1,1,1];
-            sharpness = sum(sum(container.*filter));
-            RGB_temp(h,w,l) = RGB_temp(h,w,l)+sharpness;
-        end
-    end
-end
-%}
 end
 

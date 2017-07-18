@@ -3,7 +3,7 @@ function [en_img] = img_enhance_homomorphic_and_alpha_trimmed ( img )
 [H,W,L] = size(img);
 RGB_temp = img_gamma_effect(img);
 
-% RGB space domain Alpha trimmed filter
+% RGB spatial domain Alpha trimmed filter
 discard = 2;
 
 for h = 1:H         % Alpha trimmed filter
@@ -75,7 +75,7 @@ end
 % Filtering
 F_V = F_V.*filter;
 
-% Frequency domain to space domain
+% Frequency domain to spatial domain
 F_V = fftshift(F_V);
 inF_V = ifft(F_V);
 V_img = exp(real(inF_V));

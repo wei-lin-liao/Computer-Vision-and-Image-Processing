@@ -71,6 +71,6 @@ Ouput image 04
 
 ---
 
-Method
+Methods
 
 ---

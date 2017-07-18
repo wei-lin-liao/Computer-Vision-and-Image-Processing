@@ -1,6 +1,6 @@
 clear;
 clc;
-%%  方法一 Homomorphic_filter_and_Alpha_trimmed
+%  Method 1 Homomorphic filter and Alpha trimmed filter
 img1 = imread('input1.bmp');
 output1 = img_enhance_homomorphic_and_alpha_trimmed(img1);
 imwrite(output1,'output1_homomorphic.bmp');
@@ -17,7 +17,7 @@ img4 = imread('input4.bmp');
 output4 = img_enhance_homomorphic_and_alpha_trimmed(img4);
 imwrite(output4,'output4_homomorphic.bmp');
 
-%%  方法二 Histogram
+%%  Method 2 Histogram equalizer
 
 img1 = imread('input1.bmp');
 output1 = img_enhance_histogram(img1);

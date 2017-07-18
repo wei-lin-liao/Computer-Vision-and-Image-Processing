@@ -7,7 +7,7 @@ RGB_temp = img_gamma_effect(img);
 RGB_temp = Equal(RGB_temp);
 
 
-% RGB ªÅ¶¡°ì Alpha trimmed Âoªi¾¹
+% RGB spatial domain Alpha trimmed filter
 discard = 2;
 for h = 1:H          % Alpha trimmed
     for w = 1:W
@@ -57,7 +57,7 @@ end
 size_0 = 1;
 discard = 2;
 
-for h = 1+size_0:H-size_0          % Alpha trimmed
+for h = 1+size_0:H-size_0          % Alpha trimmed filter
     for w = 1+size_0:W-size_0
         for l = 1:L
             container = RGB_temp(h-size_0:h+size_0,w-size_0:w+size_0,l);

@@ -4,7 +4,7 @@ output = zeros(H,W,L);
 RGB_temp = RGB_temp*511;
 RGB_histogram = zeros(512,3);
 RGB_accum = zeros(512,3);
-% 計算Histogram
+% Calculate histogram
 for h = 1:H
     for w = 1:W
         for l = 1:L
@@ -12,12 +12,11 @@ for h = 1:H
         end
     end
 end
-% Histogram 標準化
+% Histogram normalization
 for l = 1:L
     RGB_histogram(:,l) = RGB_histogram(:,l)/sum(RGB_histogram(:,l));
 end
-% stem(1:512,RGB_histogram(:,1))
-%
+
 for l = 1:L
     for s = 1:512
         RGB_accum(s,l) = sum(RGB_histogram(1:s,l));

@@ -17,7 +17,7 @@ img4 = imread('input4.bmp');
 output4 = img_enhance_homomorphic_and_alpha_trimmed(img4);
 imwrite(output4,'output4_homomorphic.bmp');
 
-%%  Method 2 Histogram equalizer
+%  Method 2 Histogram equalizer
 
 img1 = imread('input1.bmp');
 output1 = img_enhance_histogram(img1);

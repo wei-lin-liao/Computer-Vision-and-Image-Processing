@@ -77,5 +77,9 @@ Methods
 
 「 Homomorphic filter and Alpha trimmed filter」
 
-step (1) Transform image RGB to HSV , and get the ln value of V component. 
+step (1) Transform image RGB to HSV , and get the ln values of V components.
+
+step (2) Get the frequency domain of ln values of V components by FFT.
+
+step (3) 
 

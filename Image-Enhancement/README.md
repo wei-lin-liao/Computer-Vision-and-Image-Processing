@@ -85,5 +85,9 @@ step (1) Transform image RGB to HSV , and get the ln values of V components.
 
 step (2) Get the frequency domain of ln values of V components by FFT.
 
-step (3) 
+step (3) Filtering with Homomorphic filter.
+
+step (4) Recover spacial domain by computing IFFT. 
+
+step (5) Get the exponential value.
 

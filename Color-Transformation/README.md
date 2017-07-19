@@ -30,7 +30,7 @@ Method
 
 ---
 
-The following steps are excuted for every pixel of the image.
+The following steps are executed for every pixel of the image.
 
 step (1) Transform 「Nonlinear RGB」 to 「Linear RGB」 ( Gamma effect )
 

@@ -74,3 +74,9 @@ Ouput image 04
 Methods
 
 ---
+
+「 Homomorphic filter and Alpha trimmed filter」
+
+The following steps are executed for every pixel of image.
+
+

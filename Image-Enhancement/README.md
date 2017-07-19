@@ -77,6 +77,5 @@ Methods
 
 「 Homomorphic filter and Alpha trimmed filter」
 
-The following steps are executed for every pixel of image.
-
+step (1) Transform image RGB to HSV , and get the ln value of V component. 
 

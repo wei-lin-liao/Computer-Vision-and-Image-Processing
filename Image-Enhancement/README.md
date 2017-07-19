@@ -53,6 +53,10 @@ Output image 04
 
 「 Homomorphic filter + Alpha trimmed filter 」
 
+Homomorphic filter ( frequency domain )
+
+![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Image-Enhancement/images/Homomorphic_filter.PNG)
+
 Ouput image 01
 
 ![alt_text](https://github.com/wei-lin-liao/Computer-Vision-and-Image-Processing/blob/master/Image-Enhancement/images/output1_homomorphic.bmp)

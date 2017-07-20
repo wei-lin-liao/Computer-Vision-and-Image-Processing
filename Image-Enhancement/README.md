@@ -89,5 +89,5 @@ step (3) Filtering with Homomorphic filter.
 
 step (4) Recover spacial domain by computing IFFT. 
 
-step (5) Get the exponential value.
+step (5) Compute the exponential value to recover RGB color space image.
 

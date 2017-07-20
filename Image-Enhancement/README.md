@@ -99,15 +99,15 @@ step (3) Filtering with Homomorphic filter.
 
 step (4) Recover spacial domain by computing IFFT. 
 
-step (5) Compute the exponential value to recover RGB color space image.
+step (5) Compute the exponential values to recover RGB color space image.
 
 
 【 Histogram equlization and Alpha trimmed filtering 】
 
 step (1) Calculate the histogram of R、G、B separately , and normalize it.
 
-step (2) Get the cumulative function from the R、G、B histogram.
+step (2) Get the cumulative functions from the R、G、B histogram.
 
-stpe (3) Tuning the value of R、G、B by mapping the value of cumulative function.
+stpe (3) Tuning the values of R、G、B by mapping the value of cumulative function.
 
 stpe (4) Transform back to nonlinear R、G、B.

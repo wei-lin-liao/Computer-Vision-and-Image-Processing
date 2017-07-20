@@ -79,7 +79,15 @@ Methods
 
 ---
 
-「 Homomorphic filter and Alpha trimmed filter」
+「 Alpha trimmed filtering 」
+
+step (1) Size of mask is 3 x 3 ( Same value as edge padding )
+
+step (2) Sort the value of mask , and delete the max and min two value .
+
+step (3) Calculate the mean value of mask as the output of central pixel.
+
+「 Homomorphic and Alpha trimmed filtering 」
 
 step (1) Transform image RGB to HSV , and get the ln values of V components.
 
@@ -90,4 +98,3 @@ step (3) Filtering with Homomorphic filter.
 step (4) Recover spacial domain by computing IFFT. 
 
 step (5) Compute the exponential value to recover RGB color space image.
-

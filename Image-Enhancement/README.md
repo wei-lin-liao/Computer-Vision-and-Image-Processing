@@ -87,6 +87,8 @@ step (2) Sort the value of mask , and delete the max and min two value .
 
 step (3) Calculate the mean value of mask as the output of central pixel.
 
+
+
 「 Homomorphic and Alpha trimmed filtering 」
 
 step (1) Transform image RGB to HSV , and get the ln values of V components.

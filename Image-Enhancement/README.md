@@ -79,7 +79,7 @@ Methods
 
 ---
 
-「 Alpha trimmed filtering 」
+【 Alpha trimmed filtering 】
 
 step (1) Size of mask is 3 x 3 ( Same value as edge padding )
 
@@ -89,7 +89,7 @@ step (3) Calculate the mean value of mask as the output of central pixel.
 
 
 
-「 Homomorphic and Alpha trimmed filtering 」
+【 Homomorphic and Alpha trimmed filtering 】
 
 step (1) Transform image RGB to HSV , and get the ln values of V components.
 
@@ -100,3 +100,14 @@ step (3) Filtering with Homomorphic filter.
 step (4) Recover spacial domain by computing IFFT. 
 
 step (5) Compute the exponential value to recover RGB color space image.
+
+
+【 Histogram equlization and Alpha trimmed filtering 】
+
+step (1) Calculate the histogram of R、G、B separately , and normalize it.
+
+step (2) Get the cumulative function from the R、G、B histogram.
+
+stpe (3) Tuning the value of R、G、B by mapping the value of cumulative function.
+
+stpe (4) Transform back to nonlinear R、G、B.
